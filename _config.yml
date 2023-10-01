@@ -12,7 +12,5 @@ aux_links:
     - "https://github.com/khulnasoft/cybersf"
 footer_content: "Copyright &copy; 2022 khulnasoft. Distributed with the <a href=\"https://github.com/khulnasoft/cybersf/tree/main/LICENSE\">MIT license.</a>"
 
-ga_tracking: UA-111350566-3
-
 plugins:
   - jekyll-seo-tag
