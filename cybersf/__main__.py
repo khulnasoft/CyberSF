@@ -13,6 +13,7 @@ import cybersf.networking
 import cybersf.obfuscation
 import cybersf.passwords
 import cybersf.web_apps
+import cybersf.redteam_tools
 from cybersf.console import console
 from cybersf.core.config import CONFIG_FILE, get_config, write_config
 from cybersf.core.menu import (
@@ -78,6 +79,7 @@ MENU_ITEMS = [
     cybersf.passwords,
     cybersf.obfuscation,
     cybersf.core.utilities,
+    cybersf.redteam_tools,
 ]
 BUILTIN_FUNCTIONS = {
     "exit": lambda: exec("raise KeyboardInterrupt"),
