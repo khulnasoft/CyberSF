@@ -1,0 +1,18 @@
+title: cybersf
+tagline: A Penetration Testing Framework
+author: khulnasoft
+url: https://khulnasoft.com
+permalink: pretty
+
+remote_theme: pmarsceill/just-the-docs
+color_scheme: nil
+logo: "/images/logo.png"
+aux_links:
+  "cybersf on GitHub":
+    - "https://github.com/khulnasoft/cybersf"
+footer_content: "Copyright &copy; 2022 khulnasoft. Distributed with the <a href=\"https://github.com/khulnasoft/cybersf/tree/main/LICENSE\">MIT license.</a>"
+
+ga_tracking: UA-111350566-3
+
+plugins:
+  - jekyll-seo-tag
