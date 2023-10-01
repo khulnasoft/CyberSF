@@ -6,11 +6,10 @@ permalink: pretty
 
 remote_theme: pmarsceill/just-the-docs
 color_scheme: nil
-logo: "/images/logo.png"
 aux_links:
   "cybersf on GitHub":
     - "https://github.com/khulnasoft/cybersf"
-footer_content: "Copyright &copy; 2022 khulnasoft. Distributed with the <a href=\"https://github.com/khulnasoft/cybersf/tree/main/LICENSE\">MIT license.</a>"
+footer_content: "Copyright &copy; 2023 khulnasoft. Distributed with the <a href=\"https://github.com/khulnasoft/cybersf/tree/main/LICENSE\">MIT license.</a>"
 
 plugins:
   - jekyll-seo-tag
