@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/khulnasoft/cybersf/main/images/cybersf.png" width="600px" alt="khulnasoft/cybersf" />
-</p>
-
 # cybersf
 
 [![PyPI](https://img.shields.io/pypi/v/cybersf?color=orange&logo=pypi&logoColor=orange&style=flat-square)](https://pypi.org/project/cybersf/)
