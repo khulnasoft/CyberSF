@@ -13,10 +13,6 @@ A Modular Penetration Testing Framework
 [![Packages](https://img.shields.io/badge/PACKAGES.md-red?style=flat-square)](https://github.com/khulnasoft/cybersf/blob/main/PACKAGES.md)
 [![Changelog](https://img.shields.io/badge/CHANGELOG.md-red?style=flat-square)](https://github.com/khulnasoft/cybersf/blob/main/CHANGELOG.md)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/khulnasoft/cybersf/main/images/cli.png" width="600px" alt="cybersf cli" />
-</p>
-
 ## Install
 
 ```bash
