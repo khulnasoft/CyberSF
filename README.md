@@ -6,7 +6,7 @@
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/khulnasoft/cybersf/latest?style=flat-square)](https://hub.docker.com/r/khulnasoft/cybersf)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-organge.svg?logo=git&logoColor=organge&style=flat-square)](http://makeapullrequest.com)
 [![Open in Visual Studio Code](https://img.shields.io/badge/VSCode-Open-0098FF?style=flat-square)](https://open.vscode.dev/khulnasoft/cybersf)
-[![Twitter Follow](https://img.shields.io/twitter/follow/cybersf_team?color=blue&style=flat-square)](https://twitter.com/cybersf_team)
+[![Twitter Follow](https://img.shields.io/twitter/follow/khulnasoft?color=blue&style=flat-square)](https://twitter.com/khulnasoft)
 
 A Modular Penetration Testing Framework
 
