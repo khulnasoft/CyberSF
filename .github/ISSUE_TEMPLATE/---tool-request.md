@@ -2,7 +2,7 @@
 name: "⛏️ Tool request"
 about: Suggest an tool for cybersf
 title: ''
-labels: tool
+labels: ''
 assignees: ''
 
 ---
