@@ -39,7 +39,7 @@ repository:
 
 # Collaborators: give specific users access to this repository.
 collaborators:
-  - username: thehappydinoa
+  - username: khulnasoft
     permission: admin
 
   # Note: Only valid on organization-owned repositories.
