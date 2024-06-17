@@ -10,7 +10,7 @@ import cybersf.networking
 import cybersf.obfuscation
 import cybersf.passwords
 import cybersf.redteam_tools
-import cybersf.steganograhy
+import cybersf.steganography
 import cybersf.web_apps
 from cybersf.console import console
 from cybersf.core.config import CONFIG_FILE, get_config, write_config
