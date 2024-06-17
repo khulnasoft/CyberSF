@@ -8,4 +8,4 @@ services:
     volumes:
       - .:/root/cybersf
     ports:
-      - 22:22
+      - 2222:22
