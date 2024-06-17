@@ -13,10 +13,15 @@ class StegnoCrackerRepo(GitHubRepo):
         )
     
     def run(self):
-        os.chdir(self.full_path)
-        set_readline([])
-        user_email = input("\nEnter a email: ").strip()
-        return os.system(f"python3 setup.py install {user_email}")
+        try:
+            os.chdir(self.full_path)
+            result = os.system(f"python3 setup.py install {user_email}")
+            if result != 0:
+                raise Exception("Command execution failed")
+                return result
+        except Exception as e:
+            console.log(f"Error: {str(e)}")
+            return -1
 
 
 stegocracker = StegnoCrackerRepo()
