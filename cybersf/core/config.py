@@ -4,7 +4,6 @@ from pathlib import Path
 from sys import platform
 
 import distro
-
 from cybersf.__version__ import __version__
 
 CURRENT_PLATFORM = platform

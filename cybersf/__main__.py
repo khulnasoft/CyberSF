@@ -4,15 +4,13 @@ import platform
 import sys
 from random import choice
 
-from rich.columns import Columns
-from rich.text import Text
-
 import cybersf.core.utilities
 import cybersf.information_gathering
 import cybersf.networking
 import cybersf.obfuscation
 import cybersf.passwords
 import cybersf.redteam_tools
+import cybersf.steganograhy
 import cybersf.web_apps
 from cybersf.console import console
 from cybersf.core.config import CONFIG_FILE, get_config, write_config
@@ -23,6 +21,8 @@ from cybersf.core.menu import (
     prompt,
     set_readline,
 )
+from rich.columns import Columns
+from rich.text import Text
 
 # Config
 config = get_config()
@@ -82,6 +82,7 @@ MENU_ITEMS = [
     cybersf.networking,
     cybersf.web_apps,
     cybersf.passwords,
+    cybersf.steganograhy,
     cybersf.obfuscation,
     cybersf.core.utilities,
     cybersf.redteam_tools,
