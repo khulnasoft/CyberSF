@@ -1,0 +1,23 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: CyberSF
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: KhulnaSoft
+    family-names: DevSecOps
+    email: security@khulnasoft.com
+identifiers:
+repository-code: 'https://github.com/khulnasoft/cybersf'
+abstract: >-
+  Cyber Security Framework & Hacking Tools Pack
+  ready for production
+keywords:
+  - cybersf
+  - DevSecOps
+  - security
+license: MIT

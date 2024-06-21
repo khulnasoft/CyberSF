@@ -2,13 +2,12 @@ import os
 import shutil
 from typing import Iterable
 
+from cybersf.console import console
+from cybersf.core.config import INSTALL_DIR
 from rich import box
 from rich.style import Style
 from rich.table import Table
 from rich.text import Text
-
-from cybersf.console import console
-from cybersf.core.config import INSTALL_DIR
 
 BACK_COMMANDS = ["back", "return"]
 

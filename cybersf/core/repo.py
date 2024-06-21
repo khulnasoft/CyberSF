@@ -3,13 +3,12 @@ from abc import ABCMeta, abstractmethod
 from shutil import rmtree, which
 from typing import Dict, Iterable, List, Optional, Union
 
-from git import RemoteProgress, Repo
-from rich.progress import BarColumn, Progress, TaskID
-from rich.table import Table
-
 from cybersf.console import console
 from cybersf.core.config import INSTALL_DIR, get_config
 from cybersf.core.menu import confirm
+from git import RemoteProgress, Repo
+from rich.progress import BarColumn, Progress, TaskID
+from rich.table import Table
 
 config = get_config()
 

@@ -42,6 +42,10 @@
 - [changeme](https://github.com/ztgrace/changeme)
   A default credential scanner
 
+## Steganograhy
+- [StegoCracker](https://github.com/W1LDN16H7/StegoCracker)
+  SteganoCracker is a tool that uncover hidden data inside files\n using brute-force utility
+
 ## Obfuscation
 
 - [Cuteit](https://github.com/D4Vinci/Cuteit)

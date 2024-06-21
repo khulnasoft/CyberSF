@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  cybersf:
+    image: khulnasoft/cybersf
+    container_name: cybersf
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/root/cybersf
+    ports:
+      - 2222:22

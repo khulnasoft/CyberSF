@@ -4,9 +4,8 @@ from base64 import b64decode
 from socket import gethostbyname
 from webbrowser import open_new_tab
 
-from requests import get
-
 from cybersf.console import console
+from requests import get
 
 from .config import GITHUB_PATH, INSTALL_DIR
 from .hosts import add_host, get_hosts

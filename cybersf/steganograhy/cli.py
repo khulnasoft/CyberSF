@@ -1,9 +1,9 @@
 # Core
 from cybersf.core.menu import tools_cli
 
-from .nuclei import nuclei
+from .stegocracker import stegocracker
 
-__tools__ = [nuclei]
+__tools__ = [stegocracker]
 
 
 def cli():
