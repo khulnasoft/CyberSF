@@ -1,4 +1,4 @@
-FROM python:3.12.0b1-alpine
+FROM python:3.14.0a3-alpine
 
 LABEL org.opencontainers.image.title="cybersf" \
       org.opencontainers.image.description="A Modular Penetration Testing Framework" \
