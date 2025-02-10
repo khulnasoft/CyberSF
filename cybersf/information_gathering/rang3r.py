@@ -14,7 +14,8 @@ class rang3rRepo(GitHubRepo):
     def run(self):
         os.chdir(self.full_path)
         set_readline([])
+        from shlex import quote
         user_domain = input('\nEnter a domain to enumerate for rang3r: ').strip()
-        return os.system('python3 rang3r.py -v -d ' + user_domain)
+        return os.system('python3 rang3r.py -v -d ' + quote(user_domain))
 
 rang3r = rang3rRepo()
