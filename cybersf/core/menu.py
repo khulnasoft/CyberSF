@@ -125,8 +125,18 @@ def tools_cli(name, tools, links=True):
     return input_wait()
 
 
-def confirm(message="Do you want to?"):
-    response = input(f"{message} (y/n): ").lower()
-    if response:
-        return response[0] == "y"
-    return False
+def confirm(message: str = "Do you want to?") -> bool:
+    """
+    Prompt the user with a yes/no question and return True for 'yes' and False for 'no'.
+
+    Args:
+        message (str): The message to display to the user.
+
+    Returns:
+        bool: True if the user confirms with 'y', False otherwise.
+    """
+    while True:
+        response = input(f"{message} (y/n): ").strip().lower()
+        if response in {'y', 'n'}:
+            return response == 'y'
+        print("Invalid input. Please enter 'y' or 'n'.")

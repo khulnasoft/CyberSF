@@ -125,24 +125,34 @@ for item in MENU_ITEMS:
 commands = list(items.keys()) + list(BUILTIN_FUNCTIONS.keys())
 
 
-def mainloop():
+def mainloop() -> None:
+    """
+    Main loop for the CLI application. Displays the menu, processes user input,
+    and executes the corresponding command.
+    """
     agreement()
     console.print(choice(BANNERS), style="red", highlight=False)
     print_menu_items()
     selected_command = input(prompt()).strip()
-    if not selected_command or (selected_command not in commands):
+
+    if not selected_command or selected_command not in commands:
         console.print("Invalid Command", style="bold yellow")
         return
+
     if selected_command in BUILTIN_FUNCTIONS:
         func = BUILTIN_FUNCTIONS.get(selected_command)
-        return func()
+        if func:
+            func()
+        return
+
     try:
         func = items[selected_command].cli
-        return func()
+        func()
+    except KeyError:
+        console.print(f"Command '{selected_command}' not found.", style="bold yellow")
     except Exception as error:
-        console.print(str(error))
+        console.print(f"An error occurred: {str(error)}", style="bold red")
         console.print_exception()
-    return
 
 
 def info():
