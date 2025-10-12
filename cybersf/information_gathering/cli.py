@@ -8,8 +8,11 @@ from .sherlock import sherlock
 from .sqlmap import sqlmap
 from .striker import striker
 from .sublist3r import sublist3r
+from .reconspider import reconspider
+from .secretfinder import secretfinder
+from .rang3r import rang3r
 
-__tools__ = [sqlmap, striker, sublist3r, sherlock, s3scanner, gitgraber, hydrarecon]
+__tools__ = [sqlmap, striker, sublist3r, sherlock, s3scanner, gitgraber, hydrarecon, reconspider, secretfinder, rang3r]
 
 
 def cli():

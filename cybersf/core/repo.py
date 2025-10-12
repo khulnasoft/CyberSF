@@ -24,7 +24,7 @@ def print_pip_deps(packages: Union[str, Iterable[str]]) -> None:
     elif isinstance(packages, Iterable):
         requirements = list(packages)
     else:
-        raise ValueError
+        raise ValueError("Invalid packages input")
     table = Table("Packages", title="Pip Dependencies")
     for req in requirements:
         table.add_row(req)
@@ -95,7 +95,7 @@ class GitHubRepo(metaclass=ABCMeta):
         self,
         path: str = "khulnasoft/cybersf",
         install: Union[str, Dict[str, Union[str, List[str]]]] = "pip install -e .",
-        description=None,
+        description: Optional[str] = None,
     ) -> None:
         self.path = path
         self.name = self.path.split("/")[-1]
