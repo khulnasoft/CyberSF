@@ -14,7 +14,7 @@ from .menu import set_readline, tools_cli
 
 
 class Utility(metaclass=ABCMeta):
-    def __init__(self, description: str = None):
+    def __init__(self, description: str = None) -> None:
         self.description = description
 
     def __str__(self) -> str:
@@ -24,11 +24,11 @@ class Utility(metaclass=ABCMeta):
         pass
 
 
-class host2ip(Utility):
-    def __init__(self):
+class Host2IP(Utility):
+    def __init__(self) -> None:
         super().__init__(description="Gets IP from host")
 
-    def run(self):
+    def run(self) -> None:
         hosts = get_hosts()
         set_readline(hosts)
         user_host = input("\nEnter a host: ").strip()
@@ -38,42 +38,45 @@ class host2ip(Utility):
         console.print(f"\n{user_host} has the IP of {ip}")
 
 
-class base64_decode(Utility):
-    def __init__(self):
+class Base64Decode(Utility):
+    def __init__(self) -> None:
         super().__init__(description="Decodes base64")
 
-    def run(self):
+    def run(self) -> None:
         user_base64 = input("\nEnter base64: ").strip()
-        text = b64decode(user_base64)
-        console.print(f"\nDecoded that is: {text}")
+        try:
+            text = b64decode(user_base64)
+            console.print(f"\nDecoded that is: {text}")
+        except Exception as e:
+            console.print(f"Error decoding base64: {e}")
 
 
-class spawn_shell(Utility):
-    def __init__(self):
+class SpawnShell(Utility):
+    def __init__(self) -> None:
         super().__init__(description="Spawns a local shell")
 
-    def run(self):
+    def run(self) -> None:
         console.print("Enter `exit` to return to cybersf")
         shell = os.getenv("SHELL", "/bin/bash")
         os.chdir(INSTALL_DIR)
         os.system(shell)
 
 
-class suggest_tool(Utility):
-    def __init__(self):
+class SuggestTool(Utility):
+    def __init__(self) -> None:
         super().__init__(description="Suggest a tool or utility")
 
-    def run(self):
+    def run(self) -> None:
         open_new_tab(
             f"https://github.com/{GITHUB_PATH}/issues/new?assignees=&labels=tool&template=---tool-request.md&title="
         )
 
 
-class print_contributors(Utility):
-    def __init__(self):
+class PrintContributors(Utility):
+    def __init__(self) -> None:
         super().__init__(description="Prints the usernames of our devs")
 
-    def run(self):
+    def run(self) -> None:
         console.print(
             """
     8888b.  888888 Yb    dP .dP"Y8
@@ -97,9 +100,9 @@ class print_contributors(Utility):
 
 __tools__ = [
     tool()
-    for tool in [host2ip, base64_decode, spawn_shell, suggest_tool, print_contributors]
+    for tool in [Host2IP, Base64Decode, SpawnShell, SuggestTool, PrintContributors]
 ]
 
 
-def cli():
+def cli() -> None:
     tools_cli(__name__, __tools__, links=False)
